@@ -3,138 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eslammzher - CV</title>
+
+    <title>Eslam Mzhr - CV</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        main {
+            max-width: 850px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            background-color: #17365d;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            color: white;
+            border: none;
+        }
+
+        section {
+            margin-top: 25px;
+        }
+
+        section h2 {
+            color: #17365d;
+            border-bottom: 2px solid #dce5f0;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: right;
+        }
+
+        th {
+            background-color: #e8eef6;
+        }
+
+        a {
+            color: #1756a9;
+            overflow-wrap: anywhere;
+        }
+
+        .english {
+            direction: ltr;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 6px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Eslammzher</h1>
+<main>
 
-        <h2>Management Information Systems and Contemporary Commerce</h2>
+    <!-- HEADER / المقدمة -->
+    <header>
+        <h1>Eslam Mzhr</h1>
+
+        <h2>
+            طالبة نظم المعلومات الإدارية والتجارة المعاصرة
+        </h2>
 
         <p>
             طالبة مهتمة بتعلم البرمجة وتطوير مهاراتي
             في الحاسوب والتصميم.
         </p>
+
+        <p class="english">
+            A student interested in learning programming
+            and developing my computer and design skills.
+        </p>
     </header>
 
-    <hr>
 
+    <!-- EDUCATION / التعليم -->
     <section>
-        <h2>My Photo</h2>
+        <h2>التعليم | Education</h2>
 
-        <figure>
-            <img
-                src="https://placehold.co/200x200"
-                alt="Eslammzher personal photo"
-                width="200"
-            >
-
-            <figcaption>
-                Eslammzher - Personal Photo
-            </figcaption>
-        </figure>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>Skills</h2>
-
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Microsoft Office</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>Education</h2>
-
-        <table border="1">
+        <table>
             <thead>
                 <tr>
-                    <th>Year</th>
-                    <th>University</th>
-                    <th>Degree</th>
+                    <th>سنة التسجيل | Enrollment Year</th>
+                    <th>الجامعة | University</th>
+                    <th>التخصص | Major</th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
                     <td>2023</td>
-                    <td>Al-Aqsa University</td>
-                    <td>Bachelor's Degree</td>
-                </tr>
 
-                <tr>
-                    <td>2023</td>
-                    <td>Al-Aqsa University</td>
-                    <td>Management Information Systems</td>
+                    <td>
+                        جامعة الأقصى
+                        <br>
+                        Al-Aqsa University
+                    </td>
+
+                    <td>
+                        نظم المعلومات الإدارية والتجارة المعاصرة
+                        <br>
+                        <span class="english">
+                            Management Information Systems
+                            and Contemporary Commerce
+                        </span>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <hr>
 
+    <!-- SKILLS / المهارات -->
     <section>
-        <h2>Experience</h2>
-
-        <p>
-            لا توجد خبرة عملية حتى الآن، وأعمل على تطوير
-            مهاراتي من خلال الدراسة والمشاريع.
-        </p>
-
-        <ol>
-            <li>
-                <strong>HTML Practice</strong>
-                - Practicing HTML Basics
-            </li>
-
-            <li>
-                <strong>Microsoft Office</strong>
-                - Developing Computer Skills
-            </li>
-
-            <li>
-                <strong>University Projects</strong>
-                - Academic Learning Projects
-            </li>
-        </ol>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>Contact</h2>
+        <h2>المهارات | Skills</h2>
 
         <ul>
             <li>
+                استخدام الحاسوب
+                | Using a computer
+            </li>
+
+            <li>
+                استخدام بعض برامج التصميم
+                | Using some design software
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- LANGUAGES / اللغات -->
+    <section>
+        <h2>اللغات | Languages</h2>
+
+        <ul>
+            <li>اللغة العربية | Arabic</li>
+            <li>اللغة الإنجليزية | English</li>
+        </ul>
+    </section>
+
+
+    <!-- EXPERIENCE / الخبرات والمشاريع -->
+    <section>
+        <h2>الخبرات والمشاريع | Experience & Projects</h2>
+
+        <p>
+            لا توجد لدي خبرة عملية حتى الآن،
+            وأعمل على تطوير مهاراتي من خلال الدراسة والمشاريع.
+        </p>
+
+        <p class="english">
+            I do not have professional experience yet.
+            I am developing my skills through my studies
+            and projects.
+        </p>
+    </section>
+
+
+    <!-- CONTACT / التواصل -->
+    <section>
+        <h2>معلومات التواصل | Contact</h2>
+
+        <ul>
+            <li>
+                البريد الإلكتروني | Email:
                 <a href="mailto:eslam099987@gmail.com">
-                    Email Me
+                    eslam099987@gmail.com
                 </a>
             </li>
 
             <li>
+                رقم الهاتف | Phone:
                 <a href="tel:0594459882">
-                    Call Me
+                    0594459882
                 </a>
             </li>
 
             <li>
-                <a href="https://github.com/eslam099987-webS"
-                   target="_blank">
-                    GitHub
+                GitHub:
+                <a href="https://githab.com/eslam099987-web--cv"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    My GitHub Profile
                 </a>
             </li>
         </ul>
     </section>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- FOOTER / التذييل -->
+    <footer>
+        Eslam Mzhr | السيرة الذاتية
+    </footer>
+
+</main>
 
 </body>
 </html>
