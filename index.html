@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية - إسلام محمد أحمد مزهر</title>
+
+    <style>
+        /* TODO 1: تنسيق الصفحة والخط */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+            background-color: #0f1018;
+            color: #e8e8ee;
+            line-height: 1.8;
+            margin: 0;
+            padding: 24px 16px;
+        }
+
+        /* TODO 6: ظل الحاوية */
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 28px;
+            background-color: #151620;
+            border: 1px solid #252733;
+            border-radius: 18px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* TODO 2: رأس الصفحة بخلفية متدرجة */
+        .cv-header {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 26px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border: 1px solid #2b3045;
+            border-radius: 16px;
+        }
+
+        h1 {
+            margin: 8px 0;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #bfc4d3;
+        }
+
+        /* TODO 7: الصورة الشخصية */
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #4caf50;
+            box-shadow: 0 4px 16px rgba(76, 175, 80, 0.28);
+            display: block;
+            margin: 0 auto 18px;
+        }
+
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4caf50;
+            box-shadow: 0 4px 16px rgba(76, 175, 80, 0.28);
+            background-color: #252733;
+            color: #bfc4d3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 18px;
+            overflow-wrap: anywhere;
+        }
+
+        section {
+            margin: 26px 0;
+        }
+
+        h2 {
+            color: #f0f0f5;
+            font-size: 1.35rem;
+            border-bottom: 1px solid #303343;
+            padding-bottom: 8px;
+        }
+
+        /* TODO 5: تنسيق الروابط */
+        a {
+            color: #4caf50;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #8be28e;
+            text-decoration: underline;
+        }
+
+        /* TODO 3: تنسيق المهارات */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skills-list li {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background-color: #203126;
+            border: 1px solid #315a3a;
+            color: #a9e5ad;
+        }
+
+        /* TODO 4: تنسيق جدول المؤهلات */
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            text-align: right;
+        }
+
+        .education-table th,
+        .education-table td {
+            border: 1px solid #373a49;
+            padding: 12px;
+        }
+
+        .education-table th {
+            background-color: #202333;
+            color: #a9e5ad;
+        }
+
+        .education-table tr:nth-child(even) {
+            background-color: #1b1d29;
+        }
+
+        .education-table tr:nth-child(odd) {
+            background-color: #151620;
+        }
+
+        .project-list {
+            padding-right: 22px;
+        }
+
+        .project-list li {
+            margin: 10px 0;
+        }
+
+        .project-title {
+            color: #f0f0f5;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-top: 16px;
+            border-top: 1px solid #303343;
+            text-align: center;
+            color: #9da2b2;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px 8px;
+            }
+
+            .cv-container {
+                padding: 16px;
+            }
+
+            .cv-header {
+                padding: 24px 12px;
+            }
+
+            .education-table th,
+            .education-table td {
+                padding: 8px;
+                font-size: 0.85rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="cv-container">
+
+        <header class="cv-header">
+            <!-- أضيفي صورتك لاحقًا باسم profile.jpg -->
+            <div class="photo-placeholder">الصورة الشخصية</div>
+
+            <!-- عند إضافة الصورة، استبدلي العنصر السابق بالسطر التالي:
+            <img class="profile-photo" src="profile.jpg"
+                 alt="الصورة الشخصية لإسلام محمد أحمد مزهر">
+            -->
+
+            <h1>إسلام محمد أحمد مزهر</h1>
+
+            <p class="subtitle">
+                طالبة نظم معلومات إدارية وتجارة معاصرة - جامعة الأقصى
+            </p>
+
+            <div class="contact-info">
+                <span>
+                    البريد الإلكتروني:
+                    <a href="mailto:eslam099987@gmail.com">
+                        eslam099987@gmail.com
+                    </a>
+                </span>
+
+                <span>
+                    الهاتف:
+                    <a href="tel:0594459882">0594459882</a>
+                </span>
+
+                <span>
+                    <a href="https://github.com/eslam099987-web/my--cv"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </span>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>نبذة عني</h2>
+            <p>
+                طالبة جامعية مهتمة بتصميم وتطوير الويب، وأسعى إلى تطوير
+                مهاراتي واكتساب خبرات جديدة في التصميم الرقمي وبناء مواقع
+                ويب إبداعية ومتجاوبة.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>المهارات</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git &amp; GitHub</li>
+                <li>Bootstrap</li>
+                <li>VS Code</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>المؤهلات الدراسية</h2>
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>التخصص</th>
+                        <th>المؤسسة التعليمية</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>نظم معلومات إدارية وتجارة معاصرة</td>
+                        <td>جامعة الأقصى</td>
+                        <td>طالبة جامعية</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="courses">
+            <h2>الدورات التدريبية</h2>
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>الدورات والمنصات</th>
+                        <th>السنة</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coursera / freeCodeCamp</td>
+                        <td>2024</td>
+                        <td>مكتملة</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>المشاريع</h2>
+            <ul class="project-list">
+                <li>
+                    <span class="project-title">
+                        معرض أعمال شخصي (Portfolio):
+                    </span>
+                    موقع شخصي متجاوب باستخدام HTML وCSS.
+                </li>
+
+                <li>
+                    <span class="project-title">تطبيق آلة حاسبة:</span>
+                    آلة حاسبة بسيطة باستخدام JavaScript.
+                </li>
+
+                <li>
+                    <span class="project-title">تطبيق الطقس:</span>
+                    تطبيق يجلب بيانات الطقس من واجهة برمجية (API).
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© إسلام محمد أحمد مزهر - السيرة الذاتية الشخصية</p>
+        </footer>
+
+    </main>
+</body>
+</html>
